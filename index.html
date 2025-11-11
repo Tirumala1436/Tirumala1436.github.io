@@ -1,120 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tirumala Reddy B H - Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 0 1em;
-            color: #333;
-            line-height: 1.5;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 2em;
-        }
-        h1 {
-            margin-bottom: 0.1em;
-        }
-        h2 {
-            border-bottom: 2px solid #1a73e8;
-            padding-bottom: 4px;
-            color: #1a73e8;
-            margin-top: 2em;
-        }
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        ul {
-            padding-left: 1.2em;
-        }
-        .contact-links a {
-            margin: 0 0.5em;
-        }
-        .small-text {
-            font-size: 0.9em;
-            color: #555;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tirumala Reddy B H - Personal Portfolio</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 900px;
+        margin: 2em auto;
+        background: #fffaf0; /* light cream */
+        color: #2c3e50; /* dark blue-grey */
+        line-height: 1.6;
+        padding: 0 1em;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        border-bottom: 4px solid #6c5ce7; /* vibrant purple */
+        padding-bottom: 1em;
+        margin-bottom: 2em;
+        background: #dfe6e9; /* subtle light grey */
+        border-radius: 12px;
+    }
+    header img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 4px solid #6c5ce7;
+        margin-right: 2em;
+        object-fit: cover;
+        box-shadow: 0 0 20px rgba(108, 92, 231, 0.6);
+        transition: transform 0.3s ease;
+    }
+    header img:hover {
+        transform: scale(1.05);
+    }
+    header div {
+        flex: 1;
+        color: #0984e3; /* bright blue */
+    }
+    header h1 {
+        margin: 0 0 0.2em 0;
+        font-weight: 700;
+        font-size: 2.7em;
+        color: #6c5ce7;
+        text-shadow: 1px 1px 2px #a29bfe;
+    }
+    nav {
+        background: linear-gradient(90deg, #ffeaa7, #fab1a0);
+        display: flex;
+        justify-content: center;
+        margin: 1.5em 0;
+        border-radius: 12px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    nav button {
+        background: none;
+        border: none;
+        color: #2d3436;
+        padding: 12px 25px;
+        font-size: 1.15em;
+        cursor: pointer;
+        font-weight: 700;
+        outline: none;
+        transition: background 0.3s ease, color 0.3s ease;
+        border-radius: 12px;
+        margin: 0 10px;
+    }
+    nav button:hover, nav button.active {
+        background: #6c5ce7;
+        color: white;
+        box-shadow: 0 0 15px #6c5ce7cc;
+    }
+    section {
+        background: white;
+        border-radius: 12px;
+        padding: 2em 2.5em;
+        box-shadow: 0 0 15px rgb(108 92 231 / 0.2);
+        margin-bottom: 3em;
+        border-left: 8px solid #6c5ce7;
+    }
+    h2 {
+        border-bottom: 3px solid #6c5ce7;
+        padding-bottom: 12px;
+        color: #6c5ce7;
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 2em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    ul {
+        padding-left: 1.5em;
+    }
+    a {
+        color: #0984e3;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #6c5ce7;
+        text-decoration: underline;
+    }
+    footer {
+        text-align: center;
+        margin-top: 4em;
+        font-size: 1em;
+        color: #636e72;
+        padding: 1.2em 0;
+        background: #dfe6e9;
+        border-radius: 12px;
+        box-shadow: 0 0 10px #b2bec3aa;
+    }
+</style>
 </head>
 <body>
-    <header>
+
+<header>
+    <img src="D:\MY DoC\PHOTO ANS SIGN\imagep.jpg" alt="Tirumala Reddy B H Photo" />
+    <div>
         <h1>Tirumala Reddy B H</h1>
-        <p class="small-text">M.Tech ’25, Electrical Engineering, Microelectronics and VLSI, IIT Dharwad</p>
-        <p class="contact-links">
-            <a href="mailto:thirumala676@gmail.com">Email</a> | 
-            <a href="https://linkedin.com/in/tirumala-reddy-b-h" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/Tirumala1436" target="_blank">GitHub</a> | 
-            <a href="https://credly.com/users/tirumala-reddy-b-h" target="_blank">Certifications</a>
-        </p>
-    </header>
+        <p>M.Tech’25, Electrical Engineering, Microelectronics and VLSI, IIT Dharwad</p>
+    </div>
+</header>
 
-    <section>
-        <h2>Profile Summary</h2>
-        <p>
-            Graduate student specializing in Microelectronics and VLSI with experience in digital, analog, mixed-signal, and RF integrated circuit design. Skilled in advanced CMOS and SiGe technologies including TSMC 65nm, GF 130nm, GF 90nm BCD & SiGe, and SKY130nm. Proficient in circuit simulation, layout, and verification with focus on power, performance, and area optimization.
-        </p>
-    </section>
+<nav id="navbar">
+    <button class="tab-button active" data-target="about">About</button>
+    <button class="tab-button" data-target="education">Education</button>
+    <button class="tab-button" data-target="experience">Experience</button>
+    <button class="tab-button" data-target="projects">Projects</button>
+    <button class="tab-button" data-target="publications">Publications</button>	
+</nav>
 
-    <section>
-        <h2>Experience</h2>
-        <h3>Analog Design Engineer Intern, Entra Innovations (Sep 2025 – Present)</h3>
-        <ul>
-            <li>Designed and developed analog and mixed-signal IC circuits.</li>
-            <li>Performed circuit simulation and analysis using Cadence Virtuoso and Spectre.</li>
-            <li>Conducted testing, validation, and documentation to ensure performance compliance.</li>
-        </ul>
-    </section>
+<section id="about" class="tab-section" style="display: block;">
+    <h2>About Me</h2>
+    <p>Graduate student specializing in Microelectronics and VLSI with rich experience in digital, analog, mixed-signal, and RF integrated circuit design. Skilled in CMOS and SiGe technologies, including TSMC 65nm, GF 130nm, GF 90nm BCD & SiGe, and SKY130 nodes. I am proficient in circuit simulation, layout, and verification, with a focus on optimizing power, performance, and area.</p>
+</section>
 
-    <section>
-        <h2>Projects</h2>
-        <h3>Master's Project: TRNG Post-Processing (2023 – 2025)</h3>
-        <ul>
-            <li>Developed a TRNG based on 1st-order 4-bit Continuous-Time ΔΣ ADC leveraging thermal noise, jitter, and metastability, achieving 100 Mbps throughput and 183 pJ/bit energy efficiency.</li>
-            <li>Proposed Barrel Shifter & XOR-based post-processing method benchmarked against cryptographic modules.</li>
-            <li>Implemented all 15 NIST SP 800-22 tests in Python for randomness validation.</li>
-        </ul>
+<section id="education" class="tab-section" style="display:none;">
+    <h2>Education</h2>
 
-        <h3>Bachelor's Projects</h3>
-        <ul>
-            <li>8-bit 2-Step Flash ADC: 200 MS/s, INL/DNL < 0.5 LSB, power 90 mW @ 1.2 V, area 0.30 mm².</li>
-            <li>140 GHz CMOS LNA: 6-stage AC-coupled cascode design, power 63 mW @ 1.2 V, layout validated.</li>
-        </ul>
-    </section>
+    <p>
+        <strong style="color:#6c5ce7;">Master of Technology in Microelectronics and VLSI</strong><br />
+        Indian Institute of Technology, Dharwad (Aug 2023 – July 2025)<br />
+        Achieved a <strong>CGPA of 8.01 / 10</strong>, with focused coursework and research on integrated circuit design including analog, mixed-signal, and RF domains. 
+        Contributed to advanced projects leveraging <span style="color:#0984e3;">TSMC 65nm CMOS technology</span> and developed expertise in <span style="color:#0984e3;">circuit simulation, layout, and post-layout verification</span>.
+    </p>
 
-    <section>
-        <h2>Education</h2>
-        <p><strong>IIT Dharwad</strong>, M.Tech in Microelectronics and VLSI (Aug 2023 – July 2025)</p>
-        <p><strong>Ballari Institute of Technology & Management, VTU</strong>, B.E. in Electronics and Communication Engineering (Aug 2017 – Aug 2021)</p>
-    </section>
+    <p>
+        <strong style="color:#6c5ce7;">Bachelor of Engineering in Electronics and Communication Engineering</strong><br />
+        Ballari Institute of Technology & Management, Visvesvaraya Technological University (VTU) (Aug 2017 – Aug 2021)<br />
+        Graduated with a <strong>CGPA of 7.27 / 10</strong>. Emphasized fundamental electronics, digital and analog circuit design, and signal processing.
+        Completed major projects including <span style="color:#0984e3;">8-bit Flash ADC</span> and <span style="color:#0984e3;">140 GHz CMOS LNA design</span>.
+    </p>
+</section>
 
-    <section>
-        <h2>Skills & Tools</h2>
-        <ul>
-            <li>Programming: C/C++, Python, Verilog HDL</li>
-            <li>EDA: Cadence Virtuoso, Spectre, Quartus Prime, NGspice, LTspice, Magic, TCAD, Vivado</li>
-            <li>Platforms: Linux, Windows</li>
-            <li>Software: MATLAB, Git, Tiva C, Arduino IDE</li>
-            <li>Technology Nodes: TSMC 65nm, GF 130nm, GF 90nm BCD & SiGe, SKY130</li>
-        </ul>
-    </section>
 
-    <section>
-        <h2>Certifications</h2>
-        <ul>
-            <li><a href="https://drive.google.com/file/d/1clmtIP91_VvvVZUFdDEp7MrQA4ZH7I-k/view?usp=drive_link" target="_blank">VLSI Circuits and Systems – Learn by Doing</a> - IIT Kharagpur (May–July 2025)</li>
-            <li><a href="https://drive.google.com/file/d/1pC8eZNN07feDEBDsUVquzCIl5Krmdehk/view?usp=drive_link" target="_blank">FPGA Architecture and Verilog Programming</a> - Arm Education & NIELIT Calicut (Dec 2022–Jan 2023)</li>
-        </ul>
-    </section>
+<section id="experience" class="tab-section" style="display:none;">
+    <h2>Experience</h2>
+    <h3>Analog Design Engineer Intern, Entra Innovations (Sep 2025 – Present)</h3>
+    <ul>
+        <li>Designed and developed analog and mixed-signal IC circuits.</li>
+        <li>Performed circuit simulation and analysis using Cadence Virtuoso and Spectre.</li>
+        <li>Conducted testing, validation, and documentation to ensure performance compliance.</li>
+    </ul>
+</section>
+
+<section id="projects" class="tab-section" style="display:none;">
+    <h2>Projects</h2>
+
+    <h3>Master’s Project: TRNG Post-Processing (2023 – 2025)</h3>
+    <p>
+        Developed a True Random Number Generator (TRNG) using a 1st-order 4-bit Continuous-Time <strong>&#916;&#931; ADC</strong> in TSMC 65nm technology, leveraging multiple entropy sources such as <span style="color:#0984e3;">thermal noise</span>, <span style="color:#0984e3;">jitter</span>, and <span style="color:#0984e3;">circuit metastability</span>.
+    </p>
+    <p>
+        The project focused on a novel <strong style="color:#d63031;">Barrel Shifter & XOR-chain based post-processing method</strong> to enhance the statistical quality of the raw random bits. This post-processing approach was <strong>benchmarked against established cryptographic modules like DES, AES, and PRESENT ciphers</strong>, demonstrating superior effectiveness in boosting randomness quality and security while maintaining low energy consumption and high throughput.
+    </p>
+    <p>
+        The TRNG achieves a throughput of <strong>100 Mbps</strong> and <strong>energy efficiency of 183 pJ/bit</strong>. Randomness validation was performed using all 15 <a href="https://csrc.nist.gov/projects/random-bit-generation/documentation-and-software" target="_blank" style="color:#0984e3;">NIST SP 800-22 statistical tests</a> implemented in Python.
+    </p>
+
+    <h3>Bachelor’s Project: 8-bit 2-Step Flash ADC</h3>
+    <p>
+        Designed a <strong>200 MS/s 8-bit ADC</strong> with <strong> subranging architecture</strong> achieving excellent linearity: <strong>INL/DNL &lt; 0.5 LSB</strong>. The ADC consumes <strong>90 mW power @ 1.2V</strong> and occupies an area of <strong>0.30 mm<sup>2</sup></strong>. Comprehensive post-layout validation confirmed manufacturability and performance.
+    </p>
+
+    <h3>Bachelor’s Project: 140 GHz CMOS Low Noise Amplifier (LNA)</h3>
+    <p>
+        Developed a <strong>6-stage AC-coupled cascode LNA</strong> with <strong>20% stage scaling</strong>. Demonstrated power consumption of <strong>63 mW @ 1.2 V</strong> and compact layout <strong>(300 µm × 500 µm)</strong>. Suitable for millimeter-wave wireless applications, such as 5G, radar, and imaging, which require high gain and low noise.
+    </p>
+</section>
+
+
+<footer style="text-align:center; margin-top:2em;">
+  <a href="https://linkedin.com/in/tirumala-reddy-b-h" target="_blank" aria-label="LinkedIn" style="margin: 0 10px;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg" 
+         alt="LinkedIn" width="30" height="30" style="vertical-align:middle; fill:#0077B5;" />
+  </a>
+
+  <a href="https://github.com/Tirumala1436" target="_blank" aria-label="GitHub" style="margin: 0 10px;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg" 
+         alt="GitHub" width="30" height="30" style="vertical-align:middle; fill:#181717;" />
+  </a>
+
+  <a href="mailto:thirumala676@gmail.com" aria-label="Email" style="margin: 0 10px;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gmail.svg" 
+         alt="Email" width="30" height="30" style="vertical-align:middle; fill:#EA4335;" />
+  </a>
+
+  <a href="https://www.hackerearth.com/@thirumala676/" target="_blank" aria-label="HackerEarth" style="margin: 0 10px;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/hackerearth.svg" 
+         alt="HackerEarth" width="30" height="30" style="vertical-align:middle; fill:#2EC866;" />
+  </a>
+
+  <a href="https://www.geeksforgeeks.org/user/thirumau8lq/" target="_blank" aria-label="GeeksforGeeks" style="margin: 0 10px;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/geeksforgeeks.svg" 
+         alt="GeeksforGeeks" width="30" height="30" style="vertical-align:middle; fill:#37b24d;" />
+  </a>
+  <p style="margin-top: 1em; font-size: 0.9em; color:#444;">&copy; 2025 Tirumala Reddy B H</p>
+</footer>
+
+
+<script>
+    const buttons = document.querySelectorAll('.tab-button');
+    const sections = document.querySelectorAll('.tab-section');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            buttons.forEach(btn => btn.classList.remove('active'));
+            sections.forEach(section => section.style.display = 'none');
+
+            button.classList.add('active');
+            const target = button.getAttribute('data-target');
+            document.getElementById(target).style.display = 'block';
+        });
+    });
+</script>
 
 </body>
 </html>
-
