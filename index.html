@@ -199,25 +199,52 @@
 <section id="projects" class="tab-section" style="display:none;">
     <h2>Projects</h2>
 
+    <!-- Master's Project -->
     <h3>Master’s Project: TRNG Post-Processing (2023 – 2025)</h3>
     <p>
-        Developed a True Random Number Generator (TRNG) using a 1st-order 4-bit Continuous-Time <strong>&#916;&#931; ADC</strong> in TSMC 65nm technology, leveraging multiple entropy sources such as <span style="color:#0984e3;">thermal noise</span>, <span style="color:#0984e3;">jitter</span>, and <span style="color:#0984e3;">circuit metastability</span>.
+        Designed a True Random Bit Generator (TRNG) based on a 1st-order 4-bit, Continuous-Time <strong>ΔΣ ADC</strong> in TSMC 65 nm technology. The design leverages <span style="color:#0984e3;">thermal noise</span>, <span style="color:#0984e3;">jitter</span>, and <span style="color:#0984e3;">metastability</span> sources to achieve <strong>100 Mbps throughput</strong> with an energy efficiency of <strong>183 pJ/bit</strong>.
     </p>
     <p>
-        The project focused on a novel <strong style="color:#d63031;">Barrel Shifter & XOR-chain based post-processing method</strong> to enhance the statistical quality of the raw random bits. This post-processing approach was <strong>benchmarked against established cryptographic modules like DES, AES, and PRESENT ciphers</strong>, demonstrating superior effectiveness in boosting randomness quality and security while maintaining low energy consumption and high throughput.
-    </p>
-    <p>
-        The TRNG achieves a throughput of <strong>100 Mbps</strong> and <strong>energy efficiency of 183 pJ/bit</strong>. Randomness validation was performed using all 15 <a href="https://csrc.nist.gov/projects/random-bit-generation/documentation-and-software" target="_blank" style="color:#0984e3;">NIST SP 800-22 statistical tests</a> implemented in Python.
+        Proposed and implemented a <strong style="color:#d63031;">Barrel Shifter & XOR-chain based post-processing method</strong>, benchmarking it against <strong>DES, PRESENT, and AES</strong> cryptographic modules. To ensure industry-standard security, I implemented all 15 <a href="https://csrc.nist.gov/projects/random-bit-generation/documentation-and-software" target="_blank" style="color:#0984e3;">NIST SP 800-22 statistical tests</a> in Python for automated randomness validation and p-value analysis.
     </p>
 
-    <h3>Bachelor’s Project: 8-bit 2-Step Flash ADC</h3>
+    <!-- ADC Projects -->
+    <h3>Mixed-Signal ADC Designs</h3>
     <p>
-        Designed a <strong>200 MS/s 8-bit ADC</strong> with <strong> subranging architecture</strong> achieving excellent linearity: <strong>INL/DNL &lt; 0.5 LSB</strong>. The ADC consumes <strong>90 mW power @ 1.2V</strong> and occupies an area of <strong>0.30 mm<sup>2</sup></strong>. Comprehensive post-layout validation confirmed manufacturability and performance.
+        <strong>10-bit, 32 MS/s SAR ADC:</strong> Designed an asynchronous SAR ADC with a <strong>split CDAC</strong> and <strong>StrongARM comparator</strong> in GF SiGe BiCMOS 90 nm; achieved approximately <strong>9.3 ENOB</strong>.
+    </p>
+    <p>
+        <strong>8-bit 2-Step Flash ADC:</strong> Developed a <strong>200 MS/s subranging ADC</strong> in TSMC 65 nm CMOS using a flash front-end and R-2R DAC residue stage; achieved <strong>INL/DNL &lt; 0.5 LSB</strong> with 90 mW power at 1.2 V.
+    </p>
+    <p>
+        <strong>12-bit Dual-Slope ADC:</strong> Designed a fully differential dual-slope ADC in TSMC 65 nm for improved noise immunity and inherent <strong>60 Hz line-noise rejection</strong>, analyzing linearity through extracted transfer characteristics.
     </p>
 
-    <h3>Bachelor’s Project: 140 GHz CMOS Low Noise Amplifier (LNA)</h3>
+    <!-- RF Projects -->
+    <h3>RF & Millimeter-Wave Circuits</h3>
     <p>
-        Developed a <strong>6-stage AC-coupled cascode LNA</strong> with <strong>20% stage scaling</strong>. Demonstrated power consumption of <strong>63 mW @ 1.2 V</strong> and compact layout <strong>(300 µm × 500 µm)</strong>. Suitable for millimeter-wave wireless applications, such as 5G, radar, and imaging, which require high gain and low noise.
+        <strong>X-band (8–12 GHz) Phase Shifter:</strong> Developed a phase shifter for an 8-channel BFIC in GF SiGe BiCMOS 90 nm, achieving a <strong>5.625° step</strong>, full 360° range, and <strong>≤5° RMS phase error</strong>.
+    </p>
+    <p>
+        <strong>140 GHz CMOS LNA:</strong> Designed a <strong>6-stage cascode LNA</strong> at 140 GHz with stage scaling for optimized gain and stability, consuming <strong>63 mW</strong> at 1.2 V.
+    </p>
+    <p>
+        <strong>2.4 GHz Class-AB Power Amplifier:</strong> Simulated a Class-AB CMOS PA in TSMC 65 nm featuring a cascode output stage; achieved <strong>~16.5 dBm Pout</strong> and evaluated PAE and AM-AM/AM-PM distortion.
+    </p>
+
+    <!-- Analog & Digital Projects -->
+    <h3>Analog, Digital & Power Management</h3>
+    <p>
+        <strong>Low-Dropout Regulators (LDO):</strong> Designed 1.5V and 3.3V LDOs in GF 130 nm BCD, and a <strong>100 mA PMOS-pass LDO</strong> in TSMC 65 nm, verified for stability and phase margin across the full load range.
+    </p>
+    <p>
+        <strong>High-Speed SERDES Backend:</strong> Implemented a <strong>64:1 Serializer/1:64 Deserializer</strong> in Verilog, validated at <strong>1 Gbps</strong> with double-buffered pipelined streaming and deterministic 64-cycle latency.
+    </p>
+    <p>
+        <strong>CMOS Image Sensor Pixels:</strong> Designed 4T APS and CTIA APS pixel circuits in TSMC 65 nm; analyzed the impact of <strong>V<sub>T</sub> variation</strong> on readout linearity and start voltage.
+    </p>
+    <p>
+        <strong>High-Speed Dynamic Comparator:</strong> Developed a comparator verified up to <strong>1 GHz</strong> with 5–10 mV resolution, including a positive edge-triggered flip-flop with extracted timing parameters.
     </p>
 </section>
 
@@ -269,3 +296,4 @@
 
 </body>
 </html>
+
